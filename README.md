@@ -19,7 +19,7 @@ __Properties__
 * Best case performance	O(n)
 * Average case performance	O(n<sup>2</sup>)
 
-###### Source: [Wikipedia][bubble-wiki] 
+###### Source: [Wikipedia][bubble-wiki]
 ###### View the algorithm in [action][bubble-toptal]
 
 ### Bucket
@@ -33,7 +33,7 @@ __Properties__
 * Best case performance	O(n+k)
 * Average case performance	O(n+k)
 
-###### Source: [Wikipedia][bucket-wiki] 
+###### Source: [Wikipedia][bucket-wiki]
 
 
 ### Cocktail shaker
@@ -46,7 +46,7 @@ __Properties__
 * Best case performance	O(n)
 * Average case performance	O(n<sup>2</sup>)
 
-###### Source: [Wikipedia][cocktail-shaker-wiki] 
+###### Source: [Wikipedia][cocktail-shaker-wiki]
 
 
 ### Insertion Sort
@@ -73,7 +73,7 @@ __Properties__
 * Best case performance	O(n log n)
 * Average case performance	O(n log n)
 
-###### Source: [Wikipedia][merge-wiki] 
+###### Source: [Wikipedia][merge-wiki]
 ###### View the algorithm in [action][merge-toptal]
 
 ### Quick
@@ -113,7 +113,7 @@ __Properties__
 * Best case performance	O(wn)
 * Average case performance	O(wn)
 
-###### Source: [Wikipedia][radix-wiki] 
+###### Source: [Wikipedia][radix-wiki]
 
 
 ### Selection
@@ -126,7 +126,7 @@ __Properties__
 * Best case performance	O(n<sup>2</sup>)
 * Average case performance	O(n<sup>2</sup>)
 
-###### Source: [Wikipedia][selection-wiki] 
+###### Source: [Wikipedia][selection-wiki]
 ###### View the algorithm in [action][selection-toptal]
 
 
@@ -199,7 +199,7 @@ On average the interpolation search makes about log(log(n)) comparisons (if the 
 
 In interpolation-sequential search, interpolation is used to find an item near the one being searched for, then linear search is used to find the exact item.
 
-###### Source: [Wikipedia][interpolation-wiki] 
+###### Source: [Wikipedia][interpolation-wiki]
 
 
 ## Jump Search
@@ -229,7 +229,7 @@ As with quicksort, quickselect is generally implemented as an in-place algorithm
 
 These memory structures form what is known as the tabu list, a set of rules and banned solutions used to filter which solutions will be admitted to the neighborhood {\displaystyle N^{*}(x)} N^*(x) to be explored by the search. In its simplest form, a tabu list is a short-term set of the solutions that have been visited in the recent past (less than {\displaystyle n} n iterations ago, where {\displaystyle n} n is the number of previous solutions to be stored — is also called the tabu tenure). More commonly, a tabu list consists of solutions that have changed by the process of moving from one solution to another. It is convenient, for ease of description, to understand a “solution” to be coded and represented by such attributes.
 
-###### Source: [Wikipedia][tabu-wiki] 
+###### Source: [Wikipedia][tabu-wiki]
 
 ----------------------------------------------------------------------------------------------------------------------
 
@@ -258,7 +258,7 @@ Many people have tried to implement encryption schemes that are essentially Vige
 
 ### Transposition
 
-**Transposition cipher** is a method of encryption by which the positions held by units of *plaintext* (which are commonly characters or groups of characters) are shifted according to a regular system, so that the *ciphertext* constitutes a permutation of the plaintext. That is, the order of the units is changed (the plaintext is reordered).<br> 
+**Transposition cipher** is a method of encryption by which the positions held by units of *plaintext* (which are commonly characters or groups of characters) are shifted according to a regular system, so that the *ciphertext* constitutes a permutation of the plaintext. That is, the order of the units is changed (the plaintext is reordered).<br>
 
 Mathematically a bijective function is used on the characters' positions to encrypt and an inverse function to decrypt.
 

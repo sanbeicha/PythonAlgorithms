@@ -1,4 +1,4 @@
-'''Conway's Game Of Life, Author Anurag Kumar(mailto:anuragkumarak95@gmail.com) 
+'''Conway's Game Of Life, Author Anurag Kumar(mailto:anuragkumarak95@gmail.com)
 
 Requirements:
   - numpy
@@ -13,7 +13,7 @@ Usage:
   - $python3 game_o_life <canvas_size:int>
 
 Game-Of-Life Rules:
- 
+
  1.
  Any live cell with fewer than two live neighbours
  dies, as if caused by under-population.
@@ -62,10 +62,10 @@ def run(canvas):
         for c, pt in enumerate(row):
             # print(r-1,r+2,c-1,c+2)
             next_gen_canvas[r][c] = __judge_point(pt,canvas[r-1:r+2,c-1:c+2])
-    
+
     canvas = next_gen_canvas
     del next_gen_canvas # cleaning memory as we move on.
-    return canvas.tolist()   
+    return canvas.tolist()
 
 def __judge_point(pt,neighbours):
     dead  = 0
@@ -79,7 +79,7 @@ def __judge_point(pt,neighbours):
     # handling duplicate entry for focus pt.
     if pt : alive-=1
     else : dead-=1
-    
+
     # running the rules of game here.
     state = pt
     if pt:
@@ -98,20 +98,20 @@ def __judge_point(pt,neighbours):
 
 if __name__=='__main__':
     if len(sys.argv) != 2: raise Exception(usage_doc)
-   
+
     canvas_size = int(sys.argv[1])
     # main working structure of this module.
     c=create_canvas(canvas_size)
     seed(c)
     fig, ax = plt.subplots()
-    fig.show() 
+    fig.show()
     cmap = ListedColormap(['w','k'])
     try:
         while True:
-            c = run(c)            
+            c = run(c)
             ax.matshow(c,cmap=cmap)
             fig.canvas.draw()
-            ax.cla() 
+            ax.cla()
     except KeyboardInterrupt:
         # do nothing.
         pass

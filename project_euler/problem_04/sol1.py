@@ -19,8 +19,8 @@ for number in range(limit-1,10000,-1):
 
         # if 'number' is a product of two 3-digit numbers
         # then number is the answer otherwise fetch next number.
-        while(divisor != 99): 
-            
+        while(divisor != 99):
+
             if((number % divisor == 0) and (len(str(number / divisor)) == 3)):
 
                 print(number)

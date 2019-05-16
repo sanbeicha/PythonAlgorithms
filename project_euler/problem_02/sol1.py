@@ -15,7 +15,7 @@ except NameError:
 
 n = int(raw_input().strip())
 i=1
-j=2 
+j=2
 sum=0
 while(j<=n):
     if j%2 == 0:

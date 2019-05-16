@@ -18,18 +18,18 @@ tens_counts = [0, 0, 6, 6, 5, 5, 5, 7, 6, 6] #number of letters in twenty, thirt
 count = 0
 
 for i in range(1, 1001):
-	if i < 1000:
-		if i >= 100:
-			count += ones_counts[i/100] + 7 #add number of letters for "n hundred"
+    if i < 1000:
+        if i >= 100:
+            count += ones_counts[i/100] + 7 #add number of letters for "n hundred"
 
-			if i%100 is not 0:
-				count += 3 #add number of letters for "and" if number is not multiple of 100
+            if i%100 is not 0:
+                count += 3 #add number of letters for "and" if number is not multiple of 100
 
-		if 0 < i%100 < 20:
-			count += ones_counts[i%100] #add number of letters for one, two, three, ..., nineteen (could be combined with below if not for inconsistency in teens)
-		else:
-			count += ones_counts[i%10] + tens_counts[(i%100-i%10)/10] #add number of letters for twenty, twenty one, ..., ninety nine
-	else:
-		count += ones_counts[i/1000] + 8
+        if 0 < i%100 < 20:
+            count += ones_counts[i%100] #add number of letters for one, two, three, ..., nineteen (could be combined with below if not for inconsistency in teens)
+        else:
+            count += ones_counts[i%10] + tens_counts[(i%100-i%10)/10] #add number of letters for twenty, twenty one, ..., ninety nine
+    else:
+        count += ones_counts[i/1000] + 8
 
 print(count)

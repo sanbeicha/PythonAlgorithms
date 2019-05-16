@@ -1,3 +1,4 @@
+# 欧几里德算法又称辗转相除法，是指用于计算两个正整数a，b的最大公约数。
 from __future__ import print_function
 # https://en.wikipedia.org/wiki/Euclidean_algorithm
 

@@ -13,5 +13,3 @@ for i in range(999,99,-1): #3 digit nimbers range from 999 down to 100
             answer = max(answer,i*j)
 print(answer)
 exit(0)
-
-
